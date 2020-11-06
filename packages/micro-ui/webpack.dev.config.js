@@ -12,6 +12,11 @@ config.plugins = config.plugins.concat([
     new ReactRefreshWebpackPlugin(),
     new HtmlWebpackPlugin({
         template: 'index.html'
+    }),
+    new webpack.DefinePlugin({
+        'process.env': {
+            autoMount: true
+        }
     })
 ]);
 

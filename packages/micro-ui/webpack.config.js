@@ -7,7 +7,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, '../../dist/micro-ui/bundle'),
         filename: 'micro-ui.[name].js',
-        library: ["MicroUi", "[name]"],
+        library: "MicroUi",
         libraryTarget: 'this'
     },
     plugins: [
