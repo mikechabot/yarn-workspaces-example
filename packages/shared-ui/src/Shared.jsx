@@ -2,7 +2,7 @@ import React from 'react';
 
 const Shared = () => (
     <div>
-        Hello from Shared
+        Hello from Shared!!
     </div>
 );
 

@@ -7,7 +7,8 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, '../../dist/micro-ui/bundle'),
         filename: 'micro-ui.[name].js',
-        library: 'DkLiveExperienceMicroUi',
+        library: ["MicroUi", "[name]"],
+        libraryTarget: 'this'
     },
     plugins: [
         new CleanWebpackPlugin(),

@@ -18,7 +18,7 @@ config.plugins = config.plugins.concat([
 config.entry = [
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
-    './src/index.js',
+    './index.js',
 ];
 
 config.devServer = {
@@ -31,9 +31,10 @@ config.devServer = {
     stats: 'errors-only',
     port: 8080,
     https: true,
-    hot: true,
+    // hot: true, // See https://github.com/webpack/webpack-dev-server/issues/2484
     inline: true,
     disableHostCheck: true,
+    injectClient: false,
     publicPath: 'https://localhost:8080/'
 };
 

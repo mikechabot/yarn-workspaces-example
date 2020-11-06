@@ -20,7 +20,7 @@ config.optimization = {
         },
     },
     // Tell Webpack to use the "minimizer"
-    minimize: true,
+    minimize: false,
     // Apply TerserPlugin
     minimizer: [
         new TerserPlugin({
