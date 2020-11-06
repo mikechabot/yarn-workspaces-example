@@ -1,0 +1,21 @@
+{
+  "name": "@dk/micro-ui",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack serve --config webpack.dev.config.js",
+    "bundle": "webpack --config webpack.prod.config.js",
+    "package": "webpack --config webpack.npm.config.js"
+  },
+  "files": [
+    "./lib"
+  ],
+  "peerDependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "dependencies": {
+    "@dk/shared-ui": "1.0.0"
+  }
+}
